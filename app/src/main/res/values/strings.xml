@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Inventory Project</string>
+
+    <!-- Label for the inventory's name if the name is unknown [CHAR LIMIT=20] -->
+    <string name="unknown_inventory">Unknown Inventory</string>
+
+    <!-- Label for adding new inventory [CHAR LIMIT=20] -->
+    <string name="add_new_inventory">Add new inventory</string>
+
+    <!-- Label for editing existing inventory [CHAR LIMIT=20] -->
+    <string name="edit_inventory">Edit Inventory</string>
+
+    <!-- Toast message for when inventory is not successfully saved [CHAR LIMIT=NONE] -->
+    <string name="saving_inventory_failed">Error with saving inventory</string>
+
+    <!-- Toast message when new inventory has been successfully saved [CHAR LIMIT=NONE] -->
+    <string name="saving_inventory_successful">Inventory saved</string>
+
+    <!-- Toast message when inventory fails to update [CHAR LIMIT=NONE] -->
+    <string name="update_inventory_failed">Error with updating inventory</string>
+
+    <!-- Toast message in editor when current product was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_product_successful">Product Updated</string>
+
+    <!-- Alert when the user leaves the editor but hasn't saved the changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_alert">Do you want to delete your changes and quit editing?</string>
+
+    <!-- Message for the option to discard changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Message to continue editing the inventory [CHAR LIMIT=20] -->
+    <string name="continue_editing">Continue Editing</string>
+
+    <!-- Message to confirm if the user wants to delete the inventory [CHAR LIMIT=NONE] -->
+    <string name="delete_msg_alert">Are you sure you want to delete the inventory?</string>
+
+    <!-- Message when the inventory failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="delete_product_failed">Error with deleting inventory</string>
+
+    <!-- Message for successful deletion [CHAR LIMIT=NONE] -->
+    <string name="delete_inventory_successful">Inventory deleted</string>
+
+    <!-- Delete button [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Cancel button [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Empty view for no inventory [CHAR LIMIT=50] -->
+    <string name="empty_inventory">No inventory</string>
+
+    <!-- Prompts user to add inventory [CHAR LIMIT=50] -->
+    <string name="add_inventory">Add inventory</string>
+
+    <!-- Save inventory [CHAR LIMIT=20] -->
+    <string name="save">Save</string>
+
+    <!-- Button for deleting the inventory [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Insert dummy data options [CHAR LIMIT=20] -->
+    <string name="insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Option to delete all the inventory saved in the app [CHAR LIMIT=20] -->
+    <string name="delete_all_entries">Delete all entries</string>
+
+    <!-- Inventory labels [CHAR LIMIT=30] -->
+    <string name="inventory_label">Product</string>
+
+    <!-- Hint for inventory [CHAR LIMIT=30] -->
+    <string name="hint_inventory_name">Name</string>
+
+    <!-- Hint for the inventory price [CHAR LIMIT=30] -->
+    <string name="hint_inventory_price">Price</string>
+
+    <!-- Inventory currency [CHAR LIMIT=5] -->
+    <string name="currency">Dollars</string>
+
+    <!-- Button for decreasing quantity-->
+    <string name="decrease_quantity">-</string>
+
+    <!-- Quantity hint [CHAR LIMIT=30] -->
+    <string name="quantity">Quantity</string>
+
+    <!-- Units for inventory [CHAR LIMIT=5] -->
+    <string name="inventory_unit">units</string>
+
+    <!-- Button to increase quantity -->
+    <string name="increase_quantity">+</string>
+
+    <!-- Supplier for the inventory [CHAR LIMIT=30] -->
+    <string name="supplier">Supplier</string>
+
+    <!-- Hint for the name of the supplier [CHAR LIMIT=30] -->
+    <string name="supplier_name">Name</string>
+
+    <!-- Hint for the contact field [CHAR LIMIT=30] -->
+    <string name="supplier_contact">Contact</string>
+
+    <!-- Button name to contact supplier -->
+    <string name="button_order_inventory">Order again</string>
+
+    <!-- Button to sell inventory -->
+    <string name="list_sell">Sell</string>
+
+    <!-- Prompt to fill all the inventory details -->
+    <string name="prompt_fill_details">"Please fill in all the inventory details"</string>
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".EditorActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/image_style"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/image_uri"
+        tools:text="Image Source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/inventory_label"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditorFieldStyle"
+                android:inputType="textCapWords"
+                android:hint="@string/hint_inventory_name"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_inventory_price"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/label_currency"
+                style="@style/EditorQuantityStyle"
+                android:text="@string/currency" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/container_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/decrement_button"
+            android:onClick="decreaseAmount"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/decrease_quantity"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/edit_quantity"
+                style="@style/EditorFieldStyle"
+                android:inputType="number"
+                android:hint="@string/quantity"/>
+
+            <TextView
+                android:id="@+id/inventory_units"
+                style="@style/EditorQuantityStyle"
+                android:text="@string/inventory_unit"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/increment_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="increaseAmount"
+            android:text="@string/increase_quantity"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView style="@style/CategoryStyle"
+            android:text="@string/supplier"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/supplier_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/supplier_name"
+                android:inputType="textCapWords"/>
+
+            <EditText
+                android:id="@+id/edit_supplier_contact_info"
+                android:hint="@string/supplier_contact"
+                style="@style/EditorFieldStyle"
+                android:inputType="number"/>
+
+        </LinearLayout>>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="orderInventory"
+        android:text="@string/button_order_inventory"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textAllCaps="true"/>
+
+</LinearLayout>
